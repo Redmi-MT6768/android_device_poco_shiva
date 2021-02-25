@@ -56,9 +56,9 @@ void vendor_load_properties()
     string region = GetProperty("ro.boot.hwc", "");
 
     if (region == "CN") {
-        model = "Redmi 9 Prime";
+        model = "Poco M2";
     } else {
-        model = "Redmi 9";
+        model = "Poco M2";
     }
 
     // Override all partitions' props

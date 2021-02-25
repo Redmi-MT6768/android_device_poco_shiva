@@ -15,7 +15,7 @@
 #
 
 # Inherit from merlin device makefile
-$(call inherit-product, device/xiaomi/lancelot/device.mk)
+$(call inherit-product, device/poco/shiva/device.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -32,18 +32,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := lancelot
-PRODUCT_NAME := aosp_lancelot
+PRODUCT_DEVICE := shiva
+PRODUCT_NAME := aosp_shiva
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR := xiaomi
-TARGET_VENDOR_PRODUCT_NAME := lancelot
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="lancelot-user 10 QP1A.190711.020 release-keys"
+TARGET_VENDOR_PRODUCT_NAME := shiva
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="shiva-user 10 QP1A.190711.020 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := Redmi/lancelot_in/lancelot:10/QP1A.190711.020/V12.0.1.0.QJCINXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/shiva_in/shiva:10/QP1A.190711.020/V12.0.1.0.QJCINXM:user/release-keys
 
 # Gapps
 TARGET_BOOT_ANIMATION_RES := 1080

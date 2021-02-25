@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/lancelot
+DEVICE_PATH := device/poco/shiva
 
 # Architecture
 TARGET_ARCH := arm64
@@ -36,7 +36,7 @@ USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := lancelot
+TARGET_BOOTLOADER_BOARD_NAME := shiva
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
@@ -56,8 +56,8 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_PROVIDES_MEDIATEK_IMS_STACK := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lancelot
-TARGET_RECOVERY_DEVICE_MODULES := libinit_lancelot
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_shiva
+TARGET_RECOVERY_DEVICE_MODULES := libinit_shiva
 
 # Kernel
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -75,7 +75,7 @@ BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6768
-TARGET_KERNEL_CONFIG := lancelot_defconfig
+TARGET_KERNEL_CONFIG := shiva_defconfig
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
